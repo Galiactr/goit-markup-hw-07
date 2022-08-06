@@ -311,9 +311,10 @@ button {
   margin-top: 0;
   margin-bottom: 0;
 }
-/* Примеры работы */
 
-.section-title {
+  /* <!-- Деятельность  --> */
+
+.activity__title {
   text-align: center;
   font-weight: 700;
   font-size: 36px;
@@ -322,17 +323,17 @@ button {
   margin-top: 0;
   margin-bottom: 50px;
 }
-.work-list {
+.activity__list {
   list-style: none;
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 0;
   display: flex;
 }
-.work-thumb {
+.activity__img-wrapper {
   position: relative;
 }
-.work-text {
+.activity__text {
   position: absolute;
   bottom: 0;
   padding: 27px 15px;
@@ -348,11 +349,11 @@ button {
   color: var(--wight-text);
   background: rgba(47, 48, 58, 0.8);
 }
-.work-list-item {
+.activity__item {
   margin-bottom: 0;
   padding-bottom: 0;
 }
-.work-list-item:not(:nth-child(1n + 3)) {
+.activity__item:not(:nth-child(1n + 3)) {
   margin-right: 30px;
 }
 /* Наша команда  */
