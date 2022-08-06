@@ -71,14 +71,14 @@ button {
 
 /* Шапка */
 
-.header {
+.page-header{
   background-color: var(--wight-text);
   border-bottom: 1px solid #ececec;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
 }
-.header-flex {
+.page-header__container {
   display: flex;
   text-align: center;
 }
@@ -90,7 +90,7 @@ button {
   margin-bottom: 0;
   align-items: center;
 }
-.header-logo {
+.page-header__logo {
   text-decoration: none;
   font-family: "Raleway", sans-serif;
   color: var(--button-color);
@@ -101,21 +101,21 @@ button {
   margin-bottom: 0;
   margin-right: 93px;
 }
-.logo-accent {
+.logo__accent {
   color: var(--text-title-color);
 }
-.nav-list {
+.site-nav {
   color: var(--text-title-color);
   list-style: none;
   display: flex;
   margin: 0;
   padding-left: 0;
 }
-.nav-list-item {
+.site-nav__item {
   position: relative;
   overflow: hidden;
 }
-.nav-list-link {
+.site-nav__link {
   display: block;
   padding: 32px 0;
 
@@ -148,11 +148,11 @@ button {
 .current:hover::after {
   transform: scaleX(0.5);
 }
-.nav-list-item:not(:last-child) {
+.site-nav__item:not(:last-child) {
   margin-right: 50px;
 }
-.nav-list-item .link:hover 
-.nav-list-item.link:focus {
+.site-nav__item .link:hover 
+.site-nav__item.link:focus {
   color: var(--button-color);
   
 }
@@ -436,10 +436,6 @@ button {
 .social-network-link:focus {
   color: var(--wight-text);
   background-color: var(--button-color);
-}
-.social-network-link:hover .icons-social-network,
-.social-network-link:focus .icons-social-network {
-  fill: var(--wight-text);
 }
 
 /* Клиенты */
