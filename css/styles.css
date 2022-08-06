@@ -361,6 +361,15 @@ button {
 .section.team {
   background-color: #f5f4fa;
 }
+.team_title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  color: var(--text-title-color);
+  margin-top: 0;
+  margin-bottom: 50px;
+}
 .team__list {
   list-style: none;
   display: flex;
