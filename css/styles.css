@@ -361,12 +361,11 @@ button {
 .section.team {
   background-color: #f5f4fa;
 }
-
-.team-list {
+.team__list {
   list-style: none;
   display: flex;
 }
-.portfolio-list {
+.team__item {
   margin-right: 30px;
   margin-bottom: 0;
   background-color: var(--wight-text);
@@ -375,15 +374,15 @@ button {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-.portfolio-list:nth-child(4n) {
+.team__item:nth-child(4n) {
   margin-right: 0;
 }
-.team-div {
+.team-card {
   padding: 30px 10px;
   /* padding-top: 30px;
   padding-bottom: 30px; */
 }
-.name {
+.team-card__name {
   color: var(--text-title-color);
   font-size: 16px;
   font-weight: 500;
@@ -392,7 +391,7 @@ button {
   margin-bottom: 10px;
   margin-top: 0;
 }
-.job-title {
+.team-card__speciality {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.2;
@@ -401,13 +400,13 @@ button {
   text-align: center;
   margin-bottom: 16px;
 }
-.social-network-list {
+.social-networks {
   list-style: none;
   display: flex;
   justify-content: center;
   gap: 10px;
 }
-.social-network-link {
+.social-networks__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -420,18 +419,18 @@ button {
 
   color: var(--primary-icon-color);
 }
-.icons-social-network {
+.social-networks__icon {
   display: flex;
   fill: currentColor;
 
   width: 20px;
   height: 20px;
 }
-.icons-social-network:hover {
+.social-networks__icon:hover {
   color: var(--wight-text);
 }
-.social-network-link:hover,
-.social-network-link:focus {
+.social-networks__link:hover,
+.social-networks__link:focus {
   color: var(--wight-text);
   background-color: var(--button-color);
 }
