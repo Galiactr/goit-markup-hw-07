@@ -21,105 +21,103 @@
   <body>
     <!-- Шапка сайта -->
 
-    <header class="header page-header">
-      <div class="container header-flex page-header__container container">
-      <nav class="navigation">
-        <a href="#hero" class="header-logo page-header__logo"
-          >Web<span class="logo__accent">Studio</span></a
-        >
-        <ul class="nav-list site-nav list">
-           <li class="nav-list-item site-nav__item nav-current"><a href="index.html" class="nav-list-link link current">Студія</a></li>
-          <li class="nav-list-item site-nav__item">
-            <a href="portfolio.html" class="nav-list-link site-nav__link link">Портфоліо</a>
-          </li>
-          <li class="nav-list-item site-nav__item"><a href="" class="nav-list-link site-nav__link  link">Контакти</a></li>
-        </ul>
-      </nav>
-        <ul class="contacts-list list">
-                <li class="contacts-list-item">
-                    <a class="contacts-list-link link" href="mailto:info@example.com">
-                        <svg width="16" height="12" class="contacts-icon mail">
-                            <use href="./images/svg/icomoon_2/symbol-defs.svg#icon-envelope"></use>
+    <header class="page-header">
+        <div class="page-header__container container">
+            <nav class="nav">
+                <a lang="en" class="logo page-header__logo" href="./index.html"><span
+                        class="logo__accent">Web</span>Studio</a>
+                <ul class="site-nav list">
+                    <li class="site-nav__item">
+                        <a class="site-nav__link link site-nav__link--current" href="./index.html">Студія</a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a class="site-nav__link link " href="./portfolio.html">Портфоліо</a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a class="site-nav__link link" href="#contacts">Контакти</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="contacts-list list">
+                <li class="contacts-list__item">
+                    <a class="contacts-list__link link" href="mailto:info@example.com">
+                        <svg width="16" height="12" class="contacts-list__icon">
+                            <use href="./img/svg/symbol-defs.svg#icon-header-mail"></use>
                         </svg>
                         info@example.com
                     </a>
                 </li>
-                <li class="contacts-list-item">
-                    <a class="contacts-list-link link" href="tel:+380991111111">
-                        <svg width="10" height="16" class="contacts-icon">
-                            <use href="./images/svg/icomoon/symbol-defs.svg#icon-Telephone_Heder"></use>
+                <li class="contacts-list__item">
+                    <a class="contacts-list__link link" href="tel:+380991111111">
+                        <svg width="10" height="16" class="contacts-list__icon">
+                            <use href="./img/svg/symbol-defs.svg#icon-header-smartphone"></use>
                         </svg>
                         +38 099 111 11 11
                     </a>
                 </li>
             </ul>
-      </div>
+        </div>
     </header>
     <main>
       <!--Герой -->
 
-      <section class="section hero">
-        <div class="container">
-          <h1 class="hero-title">
-            Ефективні рішення <br />рішення для вашого бізнесу
-          </h1>
-          <button class="button-primary" type="button" data-modal-open>Замовити послугу</button>
-        </div>
-      </section>
+     <section class="section hero">
+            <div class="container hero__container">
+                <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+                <button class="hero__btn" type="button" data-modal-open>Замовити послугу</button>
+            </div>
+        </section>
 
       <!-- Преимущества  -->
 
-      <section class="section activity">
-        <div class="container">
-          <h2 class="section-title-first">Особенности</h2>
-          <ul class="feature-list list">
-            <li class="feature-list-item">
-              <div class="feature-svg">
-                <svg class="features-icon" width=70 height=70>
+     <section class="section features">
+            <div class="container">
+                <h2 class="features__title title title--hidden">Переваги</h2>
+                <ul class="feature__list list">
+                    <li class="feature__item">
+                        <div class="feature__icon-wrapper">
+                            <svg width="70" height="70" class="features__icon">
                   <use href="./images/svg/symbol-defs.svg#icon-antenna-1"></use>
-                </svg>
-              </div>
-              <h3 class="title">Увага до деталей</h3>
-              <p class="feature-text">
-                 Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
-              </p>
-            </li>
-            <li class="feature-list-item">
-               <div class="feature-svg">
-                <svg class="features-icon" width=70 height=70>
+                 </svg>
+                        </div>
+                        <h3 class="feature__sub-title">Увага до деталей</h3>
+                        <p class="feature__discription">
+                            Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
+                        </p>
+                    </li>
+                     <li class="feature__item">
+                        <div class="feature__icon-wrapper">
+                            <svg width="70" height="70" class="features__icon">
                   <use href="./images/svg/symbol-defs.svg#icon-clock-1"></use>
-                </svg>
-              </div>
-              <h3 class="title">Пунктуальність</h3>
-              <p class="feature-text">
-                Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
-              </p>
-            </li>
-            <li class="feature-list-item">
-                <div class="feature-svg">
-                <svg class="features-icon" width=70 height=70>
+                 </svg>
+                        </div>
+                        <h3 class=" feature__sub-title">Пунктуальність</h3>
+                        <p class="feature__discription">
+                            Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+                    </li>
+                    <li class="feature__item">
+                        <div class="feature__icon-wrapper">
+                            <svg width="70" height="70" class="features__icon">
                   <use href="./images/svg/symbol-defs.svg#icon-diagram-1"></use>
-                </svg>
-              </div>
-              <h3 class="title">Планування</h3>
-              <p class="feature-text">
-                Так само консультація з широким активом значною мірою зумовлює
-              </p>
-            </li>
-            <li class="feature-list-item">
-                <div class="feature-svg">
-                <svg class="features-icon" width=70 height=70>
+                 </svg>
+                        </div>
+                        <h3 class=" feature__sub-title">Планування</h3>
+                        <p class="feature__discription">
+                            Так само консультація з широким активом значною мірою зумовлює.</p>
+                    </li>
+            <li class="feature__item">
+                        <div class="feature__icon-wrapper">
+                            <svg width="70" height="70" class="features__icon">
                   <use href="./images/svg/symbol-defs.svg#icon-astronaut-1"></use>
                 </svg>
-              </div>
-              <h3 class="title">Сучасні технології</h3>
-              <p class="feature-text">
-                Значимість цих проблем настільки очевидна, що реалізація планових завдань.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
+                        </div>
+                        <h3 class=" feature__sub-title">Сучасні технології</h3>
+                        <p class="feature__discription">
+                            Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
       <!-- Примеры  3 -->
 
