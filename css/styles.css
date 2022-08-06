@@ -445,7 +445,7 @@ button {
 }
 /* Клиенты */
 
-.clients-title {
+.clients__title {
   margin-bottom: 50px;
   text-align: center;
   font-weight: 700;
@@ -459,11 +459,11 @@ button {
   gap: 30px;
   list-style: none;
 }
-.clients-item {
+.clients-list__item {
   width: 170px;
   height: 92px;
 }
-.clients-link {
+.clients-list__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -477,14 +477,14 @@ button {
   border: 1px solid var(--primary-icon-color);
   border-radius: 4px;
 }
-.clients-logo {
+.clients-list__icon {
   display: inline-flex;
   fill: currentColor;
 
   transition: var(--transition-color), var(--transition-border);
 }
-.clients-link:hover,
-.clients-link:focus {
+.clients-list__link:hover,
+.clients-list__link:focus {
   border: 1px solid var(--button-color);
   color: var(--button-color);
 }
