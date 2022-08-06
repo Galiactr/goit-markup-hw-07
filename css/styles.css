@@ -491,7 +491,7 @@ button {
 
 /* Портфолио */
 
-.header.portfolio {
+/* .header.portfolio {
   margin-bottom: 94px;
 }
 .link-portfolio {
@@ -506,13 +506,13 @@ button {
 }
 .email-portfolio:hover {
   color: var(--button-color);
-}
+} */
 /* Портфолио список*/
 
-.portfolio {
+/* .portfolio {
   margin-bottom: 94px;
   margin-top: 0;
-}
+} */
 .button-list {
   list-style: none;
   display: flex;
