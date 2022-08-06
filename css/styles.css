@@ -385,129 +385,110 @@ textarea {
 }
 /* Наша команда  */
 
-.section.team {
-  background-color: #f5f4fa;
+.section__members {
+	background-color: var(--tertiary-bgc);
 }
 
-.team-list {
-  list-style: none;
-  display: flex;
+.members-list {
+	display: flex;
+	gap: var(--card-set-gap);
 }
-.portfolio-list {
-  margin-right: 30px;
-  margin-bottom: 0;
-  background-color: var(--wight-text);
-  border-radius: 0px 0px 4px 4px;
 
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+.members__item {
+	border-radius: 0px 0px 4px 4px;
+	background-color: var(--primary-bgc);
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-.portfolio-list:nth-child(4n) {
-  margin-right: 0;
-}
-.team-div {
-  padding: 30px 10px;
-  /* padding-top: 30px;
-  padding-bottom: 30px; */
-}
-.name {
-  color: var(--text-title-color);
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.2;
-  text-align: center;
-  margin-bottom: 10px;
-  margin-top: 0;
-}
-.job-title {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.2;
-  color: var(--text-color);
-  margin-top: 0;
-  text-align: center;
-  margin-bottom: 16px;
-}
-.social-network-list {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-.social-network-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
-  transition: var(--transition-bgc), var(--transition-color);
+.members__container {
+	padding: var(--card-set-gap) 10px;
+}
 
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
+.members__name {
+	margin-bottom: 10px;
 
-  color: var(--primary-icon-color);
+	color: var(--title-text-color);
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.19;
+	text-align: center;
 }
-.icons-social-network {
-  display: flex;
-  fill: currentColor; 
 
-  width: 20px;
-  height: 20px;
+.members__speciality {
+	margin-bottom: 16px;
+
+	color: var(--primary-text-color);
+	text-align: center;
 }
-.icons-social-network:hover {
-  color: var(--wight-text);
+
+.social-networks {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
 }
-.social-network-link:hover,
-.social-network-link:focus {
-  color: var(--wight-text);
-  background-color: var(--button-color);
+
+.social-networks__link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	transition: var(--transition-bgc), var(--transition-color);
+
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	color: var(--primary-icon-color);
 }
+
+.social-networks__icon {
+	display: inline-flex;
+	fill: currentColor;
+}
+
+.social-networks__link:hover,
+.social-networks__link:focus {
+	background-color: var(--accent-color);
+	color: var(--hover-icon-color);
+}
+
 
 /* Клиенты */
 
-.clients-title {
-  margin-bottom: 50px;
-  text-align: center;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
-  color: var(--text-title-color);
-  margin-top: 0;
+.clients__title {
+	margin-bottom: 50px;
 }
-.clients-list {
-  display: flex;
-  gap: 30px;
-  list-style: none;
-}
-.clients-item {
-  width: 170px;
-  height: 92px;
-}
-.clients-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
-  width: 100%;
-  height: 100%;
-
-  transition: var(--transition-color), var(--transition-border);
-
-  color: var(--primary-icon-color);
-  border: 1px solid var(--primary-icon-color);
-  border-radius: 4px;
+.clients__list {
+	display: flex;
+	gap: var(--card-set-gap);
 }
-.clients-logo {
-  display: inline-flex;
-  fill: currentColor;
 
-  transition: var(--transition-color), var(--transition-border);
+.clients__link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 170px;
+	height: 92px;
+
+	transition: var(--transition-color), var(--transition-border);
+
+	color: var(--primary-icon-color);
+	border: 1px solid var(--primary-icon-color);
+	border-radius: 4px;
 }
-.clients-link:hover,
-.clients-link:focus {
-  border: 1px solid var(--button-color);
-  color: var(--button-color);
+
+.clients__icon {
+	display: inline-flex;
+	fill: currentColor;
 }
+
+.clients__link:hover,
+.clients__link:focus {
+	border: 1px solid var(--accent-color);
+	color: var(--accent-color);
+}
+
 
 /* Портфолио */
 
