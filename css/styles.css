@@ -86,6 +86,7 @@ textarea {
 	clip: rect(0 0 0 0);
 	overflow: hidden;
 }
+
 /* ---------------ШАПКА-------------  */
 
 .page-header {
@@ -303,8 +304,8 @@ textarea {
 }
 /* Особенности */
 
-.section__features {
-}
+/* .section__features {
+} */
 
 .feature__list {
 	display: flex;
@@ -344,47 +345,43 @@ textarea {
 }
 /* Примеры работы */
 
-.section-title {
-  text-align: center;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
-  color: var(--text-title-color);
-  margin-top: 0;
-  margin-bottom: 50px;
+.section__activity {
+	padding-top: 0;
 }
-.work-list {
-  list-style: none;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-bottom: 0;
-  display: flex;
-}
-.work-thumb {
-  position: relative;
-}
-.work-text {
-  position: absolute;
-  bottom: 0;
-  padding: 27px 15px;
+.title {
+	margin-bottom: 50px;
+	text-align: center;
 
-  width: 100%;
-
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-align: center;
-  text-transform: uppercase;
-
-  color: var(--wight-text);
-  background: rgba(47, 48, 58, 0.8);
+	color: var(--title-text-color);
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.17;
 }
-.work-list-item {
-  margin-bottom: 0;
-  padding-bottom: 0;
+
+.activity__list {
+	display: flex;
+	gap: var(--card-set-gap);
 }
-.work-list-item:not(:nth-child(1n + 3)) {
-  margin-right: 30px;
+
+.activity__icon-wrapper {
+	position: relative;
+}
+
+.activity__text {
+	position: absolute;
+	bottom: 0;
+	padding: 27px 15px;
+
+	width: 100%;
+
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	text-align: center;
+	text-transform: uppercase;
+
+	color: var(--rare-text-color);
+	background-color: rgba(47, 48, 58, 0.8);
 }
 /* Наша команда  */
 
