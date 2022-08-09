@@ -428,14 +428,14 @@ button {
 
   color: var(--primary-icon-color);
 }
-.social-networks__icon {
+.social-networks__icons {
   display: flex;
   fill: currentColor;
 
   width: 20px;
   height: 20px;
 }
-.social-networks__icon:hover {
+.social-networks__icons:hover {
   color: var(--wight-text);
 }
 .social-networks__link:hover,
@@ -488,31 +488,6 @@ button {
   border: 1px solid var(--button-color);
   color: var(--button-color);
 }
-
-/* Портфолио */
-
-/* .header.portfolio {
-  margin-bottom: 94px;
-}
-.link-portfolio {
-  color: var(--button-color);
-}
-.email-portfolio {
-  color: var(--text-color);
-  text-decoration: none;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.1;
-}
-.email-portfolio:hover {
-  color: var(--button-color);
-} */
-/* Портфолио список*/
-
-/* .portfolio {
-  margin-bottom: 94px;
-  margin-top: 0;
-} */
 
 /* <!-- Портфолио  --> */
 
@@ -657,20 +632,22 @@ button {
 }
 /* Футер */
 
-.footer {
+.page-footer {
   background-color: #2f303a;
   margin: 0;
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer-container {
-  margin-right: 70px;
-}
-.cont-footer {
+.page-footer__container {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
-.logo-footer {
+.page-footer__address-thumb {
+  margin-right: 70px;
+  align-items: baseline;
+  }
+.footer__logo {
   text-decoration: none;
   font-family: "Raleway", sans-serif;
   color: var(--button-color);
@@ -680,11 +657,11 @@ button {
   display: block;
   margin-bottom: 20px;
 }
-.logo-accent-footer {
+.logo__accent {
   color: var(--wight-text);
   font-weight: 700;
 }
-.contact-list {
+.address__list  {
   list-style: none;
   font-style: normal;
   font-weight: 400;
@@ -693,10 +670,10 @@ button {
   color: var(--wight-text);
   display: block;
 }
-.contact-list-item {
+.address__item {
   margin-bottom: 9px;
 }
-.footer-address {
+.address__link {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   font-style: normal;
@@ -704,18 +681,19 @@ button {
 
   transition: var(--transition-color);
 }
-.footer-address:hover,
-.footer-address:focus {
+.address__link:hover,
+.address__link:focus {
   color: var(--button-color);
 }
-.contact-list-item.phone {
+.address__item .phone {
   margin-bottom: 0;
 }
 /* Футер второй */
-.container-second-footer {
+
+.social-networks-thumb {
   margin-right: 93px;
 }
-.footer-tittle {
+.social-networks-thumb__text {
   margin-bottom: 20px;
 
   font-weight: 700;
@@ -724,13 +702,13 @@ button {
   text-transform: uppercase;
   color: var(--wight-text);
 }
-.social-list {
+.social-networks {
   display: flex;
   list-style: none;
   gap: 10px;
 }
 
-.social-link {
+.social-networks__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -742,21 +720,19 @@ button {
 
   transition: var(--transition-bgc);
 }
-.icons-social {
+.social-networks__icon {
   fill: var(--wight-text);
   width: 20px;
   height: 20px;
   align-items: center;
 }
-.social-link:hover,
-.social-link:focus {
+.social-networks__link:hover,
+.social-networks__link:focus {
   background-color: var(--button-color);
 }
 /* Футер третий */
-/* .subscription-form{
- margin-bottom: 20px;
-} */
-.subscription-text {
+
+.subscription-form__text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -764,10 +740,10 @@ button {
   color: var(--wight-text);
   margin-bottom: 20px;
 }
-.subscription-form-2 {
+.subscription-form__wrapper {
   display: flex;
 }
-.subscription-form-input {
+.subscription-form__input {
   display: block;
   margin-right: 12px;
   padding: 15px 16px;
@@ -785,25 +761,24 @@ button {
   border: 1px solid rgba(255, 255, 255, 0.3);
   transition: var(--transition-border);
 }
-.subscription-form-input::placeholder {
+.subscription-form__input::placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.subscription-form-input:hover,
-.subscription-form-input:focus {
+.subscription-form__input:hover,
+.subscription-form__input:focus {
   border: 1px solid var(--button-color);
 }
-.subscription-submit {
+.subscription-form__submit {
   display: flex;
+  align-items: center;
+  padding: 10px 28px;
   font-weight: 700px;
   font-size: 16px;
   line-height: 1.88;
-  letter-spacing: 0.06em;
-
-  align-items: center;
-  padding: 10px 28px;
+  letter-spacing: 0.06em;  
 
   color: var(--wight-text);
   background-color: var(--button-color);
@@ -813,11 +788,11 @@ button {
   transition: var(--transition-bgc);
   cursor: pointer;
 }
-.subscription-submit:hover,
-.subscription-submit:focus {
+.subscription-form__submit:hover,
+.subscription-form__submit:focus {
   background-color: #188ce8;
 }
-.subscription-icon {
+.subscription-form__icon {
   padding-left: 10px;
 }
 
@@ -828,7 +803,6 @@ button {
   opacity: 0;
   pointer-events: none;
 }
-
 .backdrop {
   position: fixed;
   top: 0;
@@ -839,7 +813,7 @@ button {
 
   opacity: 1;
   transition: opacity var(--transition-modal),
-    visibility var(--transition-modal);
+  visibility var(--transition-modal);
 
   background-color: rgba(0, 0, 0, 0.2);
 }
@@ -888,9 +862,9 @@ button {
 .icon-close {
   fill: currentColor;
 }
- /* ORDER-FORM */
+/* <!-- Форма заказа --> */
  
-.order-title {
+.order-form__title {
 	margin-bottom: 12px;
   
 	font-weight: 700;
@@ -935,10 +909,11 @@ button {
 	transition: var(--transition-border);
 }
 
-.form-field__commentary:focus,
-.form-field__input:focus {
-	border: 1px solid var(--button-color);
-}
+.form-field__input:focus,
+.form-field__input:focus-within {
+  border: 1px solid var(--button-color);
+  outline: var(--button-color);
+  }
 
 .form-field__icon {
 	position: absolute;
@@ -973,7 +948,11 @@ button {
 	border-radius: 4px;
 	transition: var(--transition-border);
 }
-
+.form-field__commentary:focus,
+.form-field__commentary:focus-within {
+	border: 1px solid var(--button-color);
+  outline: var(--button-color);
+  }
 .form-field__commentary::placeholder {
 	font-size: 12px;
 	line-height: 14px;
@@ -992,7 +971,11 @@ button {
 	position: relative;
 	display: flex;
 	align-items: center;
+  
+  margin-top: 20px;
+  margin-bottom: 30px;
 
+  font-weight: 400;
 	font-size: 14px;
 	line-height: 1.71;
 
@@ -1031,12 +1014,12 @@ button {
 	border-color: transparent;
 }
 
-.checkbox-wrapper__checkbox:checked + .checkbox-icon {
+.checkbox-wrapper__checkbox:checked + .checkbox-wrapper__icon {
 	background-color: var(--button-color);
 	border-color: var(--button-color);
 }
 
-.checkbox-wrapper__checkbox:focus + .checkbox-wrapper-icon {
+.checkbox-wrapper__checkbox:focus + .checkbox-wrapper__icon {
 	border-color: var(--button-color);
 }
 
@@ -1044,13 +1027,15 @@ button {
 	color: var(--button-color);
 }
 
-.order-form-button {
+/* <!-- Кнопка  --> */
+
+.order-form__btn-wrapper {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
-.order-button {
+.order-form__btn {
 	padding: 10px 52px;
 
 	font-weight: 700;
@@ -1067,8 +1052,8 @@ button {
 	cursor: pointer;
 }
 
-.order-button:hover,
-.order-button:focus {
+.order-form__btn:hover,
+.order-form__btn:focus {
 	background-color: var(--button-color);
 }
 
