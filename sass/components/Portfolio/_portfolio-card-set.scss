@@ -1,0 +1,28 @@
+.card-set {
+     list-style: none;
+     text-decoration: none;
+     display: flex;
+     flex-wrap: wrap;
+     margin-right: 0;
+     margin-left: 0;
+     margin-bottom: 0;
+     gap: 30px;
+}
+
+.card-set__item {
+     font-size: 16px;
+     line-height: 1.9;
+     margin-right: 0;
+     margin-left: 0;
+}
+
+.card-set__item:nth-child(3n) {
+     margin-right: 0;
+}
+
+
+
+
+
+
+
